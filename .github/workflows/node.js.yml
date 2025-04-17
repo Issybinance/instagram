@@ -30,6 +30,6 @@ jobs:
     - run: npm run build --if-present
     - run: npm test
     
-    - name: install dependences
+    - name: Install Dependencie
      run: pip install resemble
      
