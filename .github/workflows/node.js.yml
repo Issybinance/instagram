@@ -10,9 +10,8 @@ on:
     branches: [ "master" ]
 
 jobs:
-  name: Run npm on Ubuntu
+  my_job:
     runs-on: ubuntu-22.04
-
     strategy:
       matrix:
         node-version: [22.x]
