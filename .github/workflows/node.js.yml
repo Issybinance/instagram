@@ -30,6 +30,6 @@ jobs:
     - run: npm run build --if-present
     - run: npm test
     
-    import { Resemble } from '@resemble/node
-
-    Resemble.setApiKey(ZWZVxebGQHrrxt0o6pi8pgtt)
+    - name: install dependences
+     run: pip install resemble
+     
