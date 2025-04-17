@@ -11,6 +11,7 @@ on:
 
 jobs:
   my_job:
+  name: Run-npm-on-Ubuntu
     runs-on: ubuntu-22.04
     strategy:
       matrix:
