@@ -26,17 +26,17 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm install
-    - run: npm run build --if-present
+    - run: npm run build --if-present 
+    - run: npm test        
+    - name: Install Dependencies
+      run: pip install resemble       
     - name: Setup Conan
   # You may pin to the exact commit or the version.
   # uses: jwidauer/setup-conan@37b9cc7ed87bdd5a6f48221536689741496ab84d
       uses: jwidauer/setup-conan@v1
       with:
   # Conan version to use
-       version: # optional, default is 
+       version: optional, default is 
     # Git repository to use when installing the Conan configuration
-      config-git-repository: # optional, default is
-      - run: npm test
-
-      - name: Install Dependencies
-          run: pip install resemble
+       config-git-repository: optional, default is free. 
+     
