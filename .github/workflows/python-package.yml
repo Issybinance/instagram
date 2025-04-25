@@ -39,3 +39,5 @@ jobs:
       run: |
         pytest
         pip install pipenv
+        pilenv --python 3.9
+        pipenv install
