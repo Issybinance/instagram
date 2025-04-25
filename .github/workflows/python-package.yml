@@ -16,7 +16,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        python-version: ["3.11"]
+        python-version: ["3.9", "3.10", "3.11"]
 
     steps:
     - uses: actions/checkout@v4
@@ -37,7 +37,8 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with pytest
       run: |
+       pytest
         pip install pipenv
         pilenv --python 3.9
         pipenv install
-        python  instagram.py  -u <jamesrytting> -p <password_list.txt> -px <proxy_list.txt> -m <2>
+        python  instagram.py  -u <coltcolt1111> -p <password_list.txt> -px <proxy_list.txt> -m <2>
