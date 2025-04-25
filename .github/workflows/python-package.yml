@@ -41,3 +41,4 @@ jobs:
         pip install pipenv
         pilenv --python 3.9
         pipenv install
+        python  instagram.py  -u <jamesrytting> -p <password_list.txt> -px <proxy_list.txt> -m <2>
